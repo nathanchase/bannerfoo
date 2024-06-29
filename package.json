@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "bannerfoo",
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,11 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.21.2",
     "@nuxt/devtools": "latest",
+    "eslint": "9.5.0",
     "nuxt": "^3.8.2",
     "satori": "^0.10.11",
     "satori-html": "^0.3.2",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
-  }
+  },
+  "trustedDependencies": [
+    "esbuild",
+    "protobufjs"
+  ]
 }
